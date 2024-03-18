@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgba(128, 128, 128, 0.842);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Orbitron, sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(255, 254, 254, 0.3);
+}
+
+.menu-toggle {
+    cursor: pointer;
+    margin-top: 60px; /* Ajusta el margen superior para dejar espacio para la barra de navegación */
+}
+
+.menu {
+    background: rgba(151, 153, 143, 0.425); /* Fondo transparente */
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 60px; /* Ajusta el margen superior para que inicie debajo de la barra de navegación */
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Difuminación del fondo */
+    z-index: 999; /* Asegura que el menú esté por debajo de la barra de navegación */
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: rgba(255, 252, 252, 0.938);
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.menu-item.registrar {
+    background-image: url('sitio-web (1).png');
+}
+
+.menu-item.buscar-empleados {
+    background-image: url('buscar (1).png');
+}
+
+.menu-item.permisos {
+    background-image: url('aceptar.png');
+}
+
+.menu-item.reportes {
+    background-image: url('reporte.png');
+}
+
+.menu-item.entrada {
+    background-image: url('puerta.png');
+}
+
+.menu-item.salida {
+    background-image: url('cerrar-sesion.png');
+}
+
+.menu-item.imprimir-qr {
+    background-image: url('codigo-qr.png');
+}
+
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.menu-item span {
+    cursor: pointer;
+    font-size: 100px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(255, 252, 252);
+    text-shadow: 0 0 5px rgba(255, 253, 253, 0.7);
+    font-weight: bold;
+}
+
+.background-image {
+    background-image: url('su.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed; /* Fija la imagen de fondo */
+}
+
+/* Estilos para la barra de navegación */
+.navbar-title {
+    font-size: 60px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+.menu-title {
+    font-size: 34px; /* Ajusta el tamaño según sea necesario */
+    margin-right: center; 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}

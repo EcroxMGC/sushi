@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    position: relative;
+}
+
+.background-image {
+    position: relative;
+    background-image: url('imagenes/WhatsApp Image 2024-02-20 at 9.07.31 PM.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Hace que la imagen de fondo cubra toda la pantalla */
+}
+
+.navbar {
+    background-color: rgba(128, 128, 128, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.menu-item {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.login-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Cambiamos el color del texto para que sea visible sobre el fondo */
+}
+
+.login-box {
+    background-color: rgba(192, 192, 192, 0.5);
+    padding: 20px;
+    border-radius: 20px; /* Bordes ovalados */
+    width: 300px; /* Ancho del formulario */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    display: block;
+    width: calc(100% - 22px); /* Ajustar para compensar el padding */
+    padding: 10px;
+    margin: 20px auto; /* Centrar horizontalmente */
+    border-radius: 5px; /* Bordes ovalados para los campos de entrada */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.button-container {
+    margin-top: 40px; /* Se aumenta el margen */
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button,
+#login-button {
+    width: 300px; /* Mismo ancho para ambos botones */
+    padding: 10px;
+    margin: 20px 5px; /* Espacio entre los botones */
+    border: none;
+    border-radius: 20px; /* Bordes ovalados */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-button {
+    margin-top: 10px; /* Se aumenta el margen superior del botón de iniciar sesión */
+}
+
+.button-container {
+    margin-top: 20px; /* Se reduce el margen superior del contenedor de botones */
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button,
+#login-button {
+    width: 300px; /* Mismo ancho para ambos botones */
+    padding: 10px;
+    margin: 5px; /* Espacio entre los botones */
+    border: none;
+    border-radius: 20px; /* Bordes ovalados */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover,
+#login-button:hover {
+    background-color: #1E5A7C;
+    color: white;
+#contact-support:hover {
+    color: #ccc; /* Cambia el color al pasar el cursor */
+}
+}

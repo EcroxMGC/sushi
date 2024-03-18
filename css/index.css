@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    background-image: url('imagenes/WhatsApp Image 2024-02-20 at 9.07.31 PM.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: rgba(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .left-section h1 {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8); /* Color blanco con transparencia */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombra difuminada blanca */
+}
+
+.navbar .right-section a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.transparent-box {
+    background-color: rgba(192, 192, 192, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.transparent-box .welcome-message {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+.transparent-box .button {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.transparent-box .button:hover {
+    background-color: darkorange;
+}

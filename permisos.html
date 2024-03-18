@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permisos</title>
+    <link rel="stylesheet" href="css/permisos.css">
+</head>
+<body>
+
+<header>
+    <h1>Permisos</h1>
+</header>
+
+<div id="formulario">
+    <label for="idEmpleado">ID del Empleado:</label>
+    <input type="text" id="idEmpleado" name="idEmpleado">
+
+    <label for="nombreEmpleado">Nombre del Empleado:</label>
+    <input type="text" id="nombreEmpleado" name="nombreEmpleado">
+
+    <label for="fecha">Fecha del permiso:</label>
+    <input type="date" id="fecha" name="fecha">
+
+    <label for="hora">Hora de llegada:</label>
+    <input type="time" id="hora" name="hora">
+
+    <label for="motivo">Motivo:</label>
+    <select id="motivo" name="motivo">
+        <option value="escuela">Escuela</option>
+        <option value="salud">Salud</option>
+        <option value="permiso">Permiso</option>
+    </select>
+
+    <table id="tabla-permisos">
+        <tr>
+            <th>ID Empleado</th>
+            <th>Nombre Empleado</th>
+            <th>Fecha</th>
+            <th>Hora de llegada</th>
+            <th>Motivo</th>
+        </tr>
+        <!-- Aquí se mostrarán los permisos registrados -->
+    </table>
+
+    <label for="comentario">Comentario:</label>
+    <textarea id="comentario" name="comentario"></textarea>
+
+    <button onclick="generarQR()">Generar QR</button>
+    <div id="codigo-qr"></div>
+    <button onclick="descargarQR()">Descargar QR</button>
+</div>
+
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<script src="js/permisos.js"></script>
+
+</body>
+</html>

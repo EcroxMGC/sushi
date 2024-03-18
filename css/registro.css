@@ -1,0 +1,72 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #000; /* Color de texto negro */
+}
+
+.background-image {
+    background-image: url('descarga (1).jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.829); /* Barra de navegación con transparencia */
+    color: #000; /* Color de texto negro */
+    text-align: center;
+    padding: 10px 0;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+
+/* Estilo para la sección de registro */
+.registro-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 40px; /* Añadir espaciado interno */
+    background-color: rgba(255, 255, 255, 0.548); /* Fondo gris con 40% de transparencia */
+    border-radius: 50px; /* Añadir bordes redondeados */
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000; /* Color de texto negro */
+}
+
+.input-group input,
+.input-group select {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0066cc;
+}

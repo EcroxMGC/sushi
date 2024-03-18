@@ -1,0 +1,107 @@
+/* Estilos para la aplicación de registro de entrada */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+/* Estilos adicionales para la tabla en registro_entrada.css */
+
+/* Agrega estas reglas de estilo a tu hoja de estilo CSS */
+
+.entrada-correcta {
+    background-color: green; /* Fondo verde para Asistencia */
+}
+
+.permiso {
+    background-color: orange; /* Fondo naranja para Permiso */
+}
+
+.llego-tarde {
+    background-color: red; /* Fondo rojo para Llegó Tarde */
+}
+
+.retardo-obligatorio {
+    background-color: red; /* Fondo rojo para Retardo Obligatorio */
+}
+
+.motivo {
+    background-color: orange; /* Fondo naranja para entradas con la palabra 'Motivo' */
+}
+
+
+
+.background-image {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.767), rgba(110, 108, 108, 0.5)), url('ENKAI.jpg');
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    background-color: #3498db5b; /* Cambia el color del título */
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+}
+
+.left-panel {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#registro-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2c3e50; /* Cambia el color de fondo de la tabla */
+    color: #fff; /* Texto en blanco */
+}
+
+#registro-table th, #registro-table td {
+    border: 1px solid rgba(255, 251, 251, 0.973);
+    padding: 8px;
+}
+
+#registro-table th {
+    background-color: #3498db; /* Cambia el color de fondo de las celdas del encabezado */
+    text-align: left;
+}
+
+#registro-table tbody tr:nth-child(even) {
+    background-color: #34495e; /* Cambia el color de fondo de las filas pares en la tabla */
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    margin: 5px;
+}
+
+#scanner {
+    opacity: 1; /* Establecer la opacidad predeterminada */
+}
+
+#scanner.off {
+    opacity: 0; /* Hacer la cámara transparente */
+}

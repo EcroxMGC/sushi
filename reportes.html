@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes</title>
+    <link rel="stylesheet" href="css/reportes.css">
+</head>
+<body class="background-image"> <!-- Agrega la clase background-image aquí -->
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <h1 class="navbar-title">REPORTES</h1>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Selector de fechas -->
+        <div class="date-selector">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+
+        <!-- Cuadro de texto para escribir el reporte -->
+        <div class="report-box">
+            <textarea id="reporte" placeholder="Escribe aquí el reporte..."></textarea>
+            <button id="enviar-button">Enviar</button>
+        </div>
+
+        <!-- Cuadro para mostrar los reportes guardados -->
+        <div class="saved-reports">
+            <h2>Reportes Guardados</h2>
+            <div id="reportes-list"></div>
+        </div>
+
+        <!-- Botón para imprimir reportes -->
+        <div class="print-button-container">
+            <button id="imprimir-semana-button">Imprimir Reportes Semana</button>
+        </div>
+    </div>
+
+    <script src="js/reportes.js"></script>
+</body>
+</html>

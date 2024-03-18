@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(128, 128, 128, 0.35); /* Fondo con transparencia */
+    color: #000; /* Color de texto negro */
+}
+
+.background-image {
+    background-image: url('pexels-sitorapicture-3687447 (1).jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.35); /* Barra de navegación con transparencia */
+    color: #000; /* Color de texto negro */
+    text-align: center;
+    padding: 10px 0;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+.tabla-section {
+    margin-top: 20px;
+    text-align: center; /* Centrar la tabla */
+    background-color: rgba(140, 146, 155, 0.993); /* Fondo azul transparente al 50% */
+    padding: 20px; /* Añadir espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#tabla-empleados {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabla-empleados th,
+#tabla-empleados td {
+    padding: 11px;
+    border-bottom: 3px solid #0f0c0c;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+#tabla-empleados th {
+    background-color: #ffe70ce7; /* Color de fondo de las celdas de encabezado */
+    font-weight: bold;
+    text-align: CENTER;
+}
+
+#tabla-empleados td {
+    text-align: center;
+}
+
+#formulario-edicion {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco transparente */
+    padding: 20px; /* Añadir espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 250px; /* Ancho del formulario */
+    position: absolute;
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar absolutamente */
+}
+/* Estilos para el botón de menú */
+.menu-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #1E90FF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agrega una transición para suavizar el cambio de color */
+}
+
+.menu-btn:hover {
+    background-color: rgba(255, 255, 0, 0.5); /* Cambia el color de fondo al pasar el mouse */
+}

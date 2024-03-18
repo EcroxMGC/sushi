@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Empleado</title>
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+    <div class="background-image">
+        <div class="navbar">
+            <h1>Registrar Empleado</h1>
+        </div>
+
+        <div class="registro-section">
+            <form id="registro-form">
+                <div class="input-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="input-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" required>
+                </div>
+                <div class="input-group">
+                    <label for="curp">CURP:</label>
+                    <input type="text" id="curp" required>
+                </div>
+                <div class="input-group">
+                    <label for="area">Área:</label>
+                    <select id="area" required>
+                        <option value="">Seleccionar Área</option>
+                        <option value="Cocina Caliente">Cocina Caliente</option>
+                        <option value="Bebidas">Bebidas</option>
+                        <option value="Gohan">Gohan</option>
+                        <option value="Barra">Barra</option>
+                        <option value="Meseros">Meseros</option>
+                        <option value="Loza">Loza</option>
+                        <option value="Freidora">Freidora</option>
+                        <option value="Caja">Caja</option>
+                    </select>
+                </div>
+                <button type="submit" onclick="return confirm('¿Estás seguro de registrar este empleado?')">Registrar</button>
+                <a href="menu.html"><button type="button">Menú</button></a>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/registro.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Entrada</title>
+    <link rel="stylesheet" href="css/registro_entrada.css">
+</head>
+<body>
+    <div class="background-image">
+        <nav class="top-bar">
+            <h1>Registro de Entrada</h1>
+        </nav>
+        <div class="content">
+            <div class="left-panel">
+                <table id="registro-table">
+                    <thead>
+                        <tr>
+                            <th>Código QR</th>
+                            <th>Fecha y Hora de Registro</th>
+                            <th>Situación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se mostrarán los datos del registro -->
+                    </tbody>
+                </table>
+                <div class="button-container">
+                    <button id="print-btn">Imprimir Reporte</button>
+                    <button id="clear-btn">Limpiar Registro</button>
+                </div>
+            </div>
+            <div class="right-panel" id="camera-panel">
+                <video id="scanner" width="70%" height="70%"></video>
+                <div class="camera-buttons">
+                    <button id="stop-btn">Apagar Cámara</button>
+                    <button id="start-btn">Encender Cámara</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <script src="js/registro_entrada.js"></script>
+</body>
+</html>

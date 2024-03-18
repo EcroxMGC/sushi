@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados</title>
+    <link rel="stylesheet" href="css/empleados.css">
+</head>
+<body>
+    <div class="background-image">
+        <div class="navbar">
+            <h1>Empleados</h1>
+            <button onclick="window.location.href='menu.html'" class="menu-btn">Menú</button>
+            <input type="text" id="busqueda" onkeyup="filtrarEmpleados()" placeholder="Buscar...">
+            <!-- Agrega el botón de Limpiar aquí -->
+            <button id="limpiar-btn">Limpiar Tabla</button>
+        </div>
+
+        <div class="tabla-section">
+            <table id="tabla-empleados">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>CURP</th>
+                        <th>Área</th>
+                        <th>Fecha de Registro</th>
+                        <th>                 </th>
+                        <th>                 </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se cargarán los datos de los empleados -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Formulario de edición oculto -->
+        <form id="formulario-edicion" style="display: none;">
+            <input type="text" id="nombre" name="nombre" required><br>
+            <input type="text" id="apellidos" name="apellidos" required><br>
+            <input type="text" id="curp" name="curp" required><br>
+            <select id="area" name="area" required>
+                <option value="">Seleccionar Área</option>
+                <option value="Cocina Caliente">Cocina Caliente</option>
+                <option value="Bebidas">Bebidas</option>
+                <option value="Gohan">Gohan</option>
+                <option value="Barra">Barra</option>
+                <option value="Meseros">Meseros</option>
+                <option value="Loza">Loza</option>
+                <option value="Freidora">Freidora</option>
+                <option value="Caja">Caja</option>
+            </select><br>
+            <input type="submit" value="Guardar Cambios">
+        </form>
+    </div>
+
+    <script src="js/empleados.js"></script>
+</body>
+</html>
